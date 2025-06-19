@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /podcast/
+Allow: /books/
+Allow: /philosophy/
+
+# Sitemap
+Sitemap: https://prismoftorah.org/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /draft/
+
+# Crawl-delay
+Crawl-delay: 10 

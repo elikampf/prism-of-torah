@@ -1,0 +1,116 @@
+/* Responsive CSS file for Prism of Torah website */
+
+/* Mobile First Approach */
+
+/* Base styles are in main.css */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .nav {
+        gap: var(--spacing-lg);
+    }
+
+    .book-card {
+        flex-direction: row;
+        text-align: left;
+        gap: var(--spacing-lg);
+    }
+
+    .book-cover {
+        margin-bottom: 0;
+    }
+
+    .hero {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .nav {
+        gap: var(--spacing-xl);
+    }
+
+    .hero-title {
+        font-size: 4.5rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Print styles */
+@media print {
+    .nav,
+    .newsletter-form,
+    .btn {
+        display: none;
+    }
+
+    body {
+        color: #000;
+        background: #fff;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #000;
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+        padding: 0;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-dark: #ffffff;
+        --primary-white: #0a0a0a;
+    }
+
+    body {
+        background-color: var(--primary-white);
+        color: var(--primary-dark);
+    }
+
+    .card {
+        background: #1a1a1a;
+        box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+    }
+
+    .form-input {
+        background: #1a1a1a;
+        border-color: #333;
+        color: var(--primary-dark);
+    }
+} 

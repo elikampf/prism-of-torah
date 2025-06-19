@@ -1,0 +1,560 @@
+.platform-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--primary-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: var(--primary-dark);
+}
+
+.platform-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.platform-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.platform-card span {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Platform-specific colors */
+.platform-card.spotify .platform-icon {
+    color: #1DB954;
+}
+
+.platform-card.apple .platform-icon {
+    color: #872EC4;
+}
+
+.platform-card.google .platform-icon {
+    color: #4285F4;
+}
+
+.platform-card.youtube .platform-icon {
+    color: #FF0000;
+}
+
+@media (max-width: 768px) {
+    .platform-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .platform-card {
+        padding: 1rem;
+    }
+    
+    .platform-icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .platform-card span {
+        font-size: 1rem;
+    }
+}
+
+/* Podcast Page Styles */
+
+/* Hero Section */
+.podcast-hero, .hero-section[aria-label="Podcast Archive Hero"] .hero-content {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.podcast-hero h1 {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-4);
+    color: var(--primary-white);
+}
+
+.hero-subtitle {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-8);
+    opacity: 0.9;
+}
+
+.hero-section[aria-label="Podcast Archive Hero"] .hero-headline {
+    text-align: center;
+    width: 100%;
+}
+
+.hero-section[aria-label="Podcast Archive Hero"] .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-6);
+    padding: 0 var(--space-4);
+}
+
+/* Search Container */
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: var(--primary-white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-2);
+    margin-bottom: var(--space-6);
+    box-shadow: var(--shadow-lg);
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: var(--space-4);
+    font-size: var(--text-base);
+    outline: none;
+    background: transparent;
+}
+
+.search-btn, .clear-search {
+    background: var(--accent-blue);
+    color: var(--primary-white);
+    border: none;
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.search-btn:hover, .clear-search:hover {
+    background: var(--accent-indigo);
+}
+
+.clear-search {
+    background: var(--gray-500);
+    margin-left: var(--space-2);
+}
+
+.quick-filters {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--primary-white);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    font-size: var(--text-sm);
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: var(--primary-white);
+    color: var(--primary-dark);
+}
+
+/* Latest Episode */
+.latest-episode {
+    padding: var(--space-16) 0;
+    background: var(--gray-50);
+}
+
+.current-episode-card {
+    background: var(--primary-white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    align-items: center;
+}
+
+.episode-info h3 {
+    color: var(--primary-dark);
+    margin-bottom: var(--space-2);
+}
+
+.episode-parsha {
+    color: var(--gray-600);
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-4);
+}
+
+.platform-links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+    flex-wrap: wrap;
+}
+
+.platform-links span {
+    color: var(--gray-600);
+    font-weight: var(--font-medium);
+}
+
+.platform-link {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-weight: var(--font-medium);
+    transition: color var(--transition-base);
+}
+
+.platform-link:hover {
+    color: var(--accent-indigo);
+    text-decoration: underline;
+}
+
+/* Search Results */
+.search-results {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4);
+}
+
+.search-results .container {
+    background: var(--primary-white);
+    border-radius: var(--radius-lg);
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: var(--space-8);
+}
+
+.search-results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-6);
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.close-search-btn {
+    background: none;
+    border: none;
+    font-size: var(--text-xl);
+    cursor: pointer;
+    color: var(--gray-600);
+    padding: var(--space-2);
+}
+
+.search-results-grid {
+    display: grid;
+    gap: var(--space-6);
+}
+
+.search-result {
+    background: var(--gray-50);
+    padding: var(--space-6);
+    border-radius: var(--radius);
+    border-left: 4px solid var(--accent-blue);
+}
+
+.episode-title {
+    color: var(--primary-dark);
+    margin-bottom: var(--space-2);
+    font-size: var(--text-lg);
+}
+
+.episode-meta {
+    color: var(--gray-600);
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-2);
+}
+
+.episode-description {
+    color: var(--gray-700);
+    margin-bottom: var(--space-4);
+}
+
+.btn-episode {
+    display: inline-block;
+    background: var(--accent-blue);
+    color: var(--primary-white);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: var(--font-medium);
+    transition: all var(--transition-base);
+}
+
+.btn-episode:hover {
+    background: var(--accent-indigo);
+    transform: translateY(-1px);
+}
+
+/* Recommended Episodes */
+.recommended-episodes {
+    padding: var(--space-16) 0;
+}
+
+.recommended-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-8);
+}
+
+.episode-card {
+    background: var(--primary-white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    box-shadow: var(--shadow);
+    transition: all var(--transition-base);
+    border-left: 4px solid var(--accent-blue);
+}
+
+.episode-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.episode-card.featured {
+    border-left-color: var(--accent-amber);
+}
+
+.episode-card h3 {
+    color: var(--primary-dark);
+    margin-bottom: var(--space-2);
+    font-size: var(--text-lg);
+}
+
+.episode-meta {
+    color: var(--gray-600);
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-4);
+}
+
+/* Episode Archive */
+.episode-archive {
+    padding: var(--space-16) 0;
+    background: var(--gray-50);
+}
+
+.archive-subtitle {
+    text-align: center;
+    color: var(--gray-600);
+    margin-bottom: var(--space-8);
+    font-size: var(--text-lg);
+}
+
+.archive-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sefer-section {
+    margin-bottom: var(--space-4);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.sefer-header {
+    width: 100%;
+    background: var(--primary-white);
+    border: none;
+    padding: var(--space-6);
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    text-align: left;
+}
+
+.sefer-header:hover {
+    background: var(--gray-50);
+}
+
+.sefer-icon {
+    font-size: var(--text-xl);
+}
+
+.sefer-title {
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+    color: var(--primary-dark);
+    flex: 1;
+}
+
+.episode-count {
+    color: var(--gray-600);
+    font-size: var(--text-sm);
+}
+
+.expand-icon {
+    font-size: var(--text-lg);
+    font-weight: var(--font-bold);
+    color: var(--accent-blue);
+    transition: transform var(--transition-base);
+}
+
+.sefer-header[aria-expanded="true"] .expand-icon {
+    transform: rotate(45deg);
+}
+
+.sefer-content {
+    background: var(--primary-white);
+    border-top: 1px solid var(--gray-200);
+    display: none;
+}
+
+.parsha-section {
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.parsha-section:last-child {
+    border-bottom: none;
+}
+
+.parsha-header {
+    width: 100%;
+    background: var(--gray-50);
+    border: none;
+    padding: var(--space-4) var(--space-6);
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    text-align: left;
+}
+
+.parsha-header:hover {
+    background: var(--gray-100);
+}
+
+.parsha-icon {
+    font-size: var(--text-lg);
+}
+
+.parsha-title {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    color: var(--primary-dark);
+    flex: 1;
+}
+
+.parsha-count {
+    color: var(--gray-600);
+    font-size: var(--text-sm);
+}
+
+.parsha-episodes {
+    background: var(--primary-white);
+    padding: var(--space-4) var(--space-6);
+    display: none;
+}
+
+.episode-item {
+    padding: var(--space-4) 0;
+    border-bottom: 1px solid var(--gray-100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.episode-item:last-child {
+    border-bottom: none;
+}
+
+.episode-item h4 {
+    color: var(--primary-dark);
+    margin-bottom: var(--space-1);
+    font-size: var(--text-base);
+}
+
+.episode-item .episode-description {
+    color: var(--gray-600);
+    font-size: var(--text-sm);
+    margin-bottom: 0;
+}
+
+.loading-placeholder {
+    text-align: center;
+    color: var(--gray-500);
+    padding: var(--space-8);
+    font-style: italic;
+}
+
+.no-results {
+    text-align: center;
+    padding: var(--space-8);
+}
+
+.no-results h3 {
+    color: var(--gray-600);
+    margin-bottom: var(--space-2);
+}
+
+.no-results p {
+    color: var(--gray-500);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .current-episode-card {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+    
+    .platform-links {
+        justify-content: center;
+    }
+    
+    .quick-filters {
+        gap: var(--space-1);
+    }
+    
+    .filter-btn {
+        padding: var(--space-1) var(--space-3);
+        font-size: var(--text-xs);
+    }
+    
+    .sefer-header, .parsha-header {
+        padding: var(--space-4);
+    }
+    
+    .episode-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-2);
+    }
+    
+    .search-results .container {
+        margin: var(--space-4);
+        padding: var(--space-4);
+    }
+}
+
+.archive-title {
+    text-align: center;
+    width: 100%;
+} 

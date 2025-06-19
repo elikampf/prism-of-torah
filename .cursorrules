@@ -1,0 +1,130 @@
+# Prism of Torah Website Project Rules
+# Project: Podcast Website for Reb Asaf Aharon Prisman
+# Domain: prismoftorah.org
+# Tech Stack: Vanilla HTML5, CSS3, JavaScript (ES6+)
+# Hosting: Netlify
+
+## Project Overview
+- Project Name: Prism of Torah
+- Host: Reb Asaf Aharon Prisman
+- Primary Goals: 
+  1. Grow podcast listenership
+  2. Build email subscribers
+  3. Sell books
+- Performance Target: Sub-3 second loading time
+
+## Design System
+
+### Color Palette
+/* Primary Colors */
+--primary-dark: #0a0a0a;
+--primary-white: #ffffff;
+--accent-gradient: linear-gradient(135deg, #ff6b6b, #ffa726, #66bb6a, #42a5f5, #ab47bc);
+
+/* Rainbow Prism Colors */
+--prism-red: #ff6b6b;
+--prism-orange: #ffa726;
+--prism-yellow: #ffeb3b;
+--prism-green: #66bb6a;
+--prism-blue: #42a5f5;
+--prism-purple: #ab47bc;
+
+### Typography
+--font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+--font-secondary: 'Crimson Text', Georgia, serif;
+
+### Brand Voice
+- Primary Tagline: "Torah That Speaks Your Language"
+- Secondary Tagline: "Where Deep Torah Meets Daily Life"
+- Hero Headline: "Stop Thinking Your Faith. Start Living It."
+- Newsletter Priority: #1 goal on every page
+
+## Technical Standards
+
+### HTML Standards
+- Use semantic HTML5 elements
+- Maintain proper heading hierarchy (h1-h6)
+- Include meta tags for SEO
+- Implement schema.org markup for podcast content
+- Ensure proper ARIA labels and roles
+
+### CSS Standards
+- Follow BEM methodology for class naming
+- Mobile-first responsive design
+- Breakpoints:
+  * Mobile: < 768px
+  * Tablet: 768px - 1024px
+  * Desktop: > 1024px
+- Use CSS custom properties for theming
+- Implement dark mode support
+
+### JavaScript Standards
+- ES6+ syntax
+- Modular code organization
+- Progressive enhancement
+- Performance optimization
+- Error handling and logging
+
+### Accessibility Standards
+- WCAG 2.1 AA compliance
+- Keyboard navigation support
+- Screen reader compatibility
+- Color contrast ratios
+- Focus management
+- Alt text for images
+
+### Performance Standards
+- Image optimization (WebP format)
+- Lazy loading for images
+- Minify CSS/JS
+- Critical CSS inline
+- Cache control headers
+- Gzip compression
+
+### Technical Integrations
+- RSS Feed: https://anchor.fm/s/815ca16c/podcast/rss
+- Email: prismoftorah@gmail.com
+- Netlify Forms integration
+- Spotify embed iframe
+- Podcast episode organization by Torah portion
+
+### SEO Requirements
+- Meta descriptions
+- Open Graph tags
+- Twitter Cards
+- XML sitemap
+- robots.txt configuration
+- Canonical URLs
+
+### Security Standards
+- HTTPS enforcement
+- CSP headers
+- XSS protection
+- Form validation
+- Input sanitization
+
+## Development Workflow
+1. Create feature branch
+2. Implement changes
+3. Test across devices
+4. Validate accessibility
+5. Check performance
+6. Submit PR
+7. Code review
+8. Deploy to staging
+9. Production deployment
+
+## File Organization
+- HTML files in root
+- CSS in /css directory
+- JavaScript in /js directory
+- Images in /images directory
+- Fonts in /assets/fonts
+- Configuration files in root
+
+## Documentation
+- Maintain README.md
+- Document component usage
+- Include setup instructions
+- List dependencies
+- Provide deployment guide 
