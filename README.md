@@ -10,39 +10,19 @@ This is a professional podcast website built with vanilla HTML, CSS, and JavaScr
 
 - Podcast episode library
 - Book sales platform
-- Newsletter subscription
-- Responsive design
-- Accessibility compliance
-- Performance optimized
+- Newsletter subscription (Netlify Forms)
+- Responsive, mobile-first design
+- Accessibility (WCAG 2.1 AA)
+- SEO meta tags, Open Graph, Twitter Cards, robots.txt, sitemap.xml
+- Performance optimized (WebP, lazy loading, minified CSS/JS, Gzip)
 
-## Tech Stack
+## Tech Stack & Dependencies
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- Netlify Hosting
-- Netlify Forms
-
-## Development Setup
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/prism-of-torah.git
-cd prism-of-torah
-```
-
-2. Install dependencies (if using any build tools):
-```bash
-npm install
-```
-
-3. Start local development:
-```bash
-# If using a local server
-python -m http.server 8000
-# or
-npx serve
-```
+- HTML5, semantic markup
+- CSS3 (BEM, custom properties, dark mode)
+- JavaScript (ES6+, modular)
+- Google Fonts: [Inter](https://fonts.google.com/specimen/Inter), [Crimson Text](https://fonts.google.com/specimen/Crimson+Text)
+- Netlify Hosting & Forms
 
 ## Project Structure
 
@@ -59,34 +39,45 @@ npx serve
 └── netlify.toml       # Netlify configuration
 ```
 
-## Development Guidelines
+## Local Development
 
-1. Follow the BEM methodology for CSS
-2. Maintain mobile-first responsive design
-3. Ensure WCAG 2.1 AA accessibility compliance
-4. Optimize images and assets
-5. Follow semantic HTML structure
-6. Implement progressive enhancement
-
-## Deployment
-
-The site is automatically deployed to Netlify when changes are pushed to the main branch.
-
-### Manual Deployment
-
-1. Build the project (if using build tools)
-2. Deploy to Netlify:
+1. Clone the repository:
 ```bash
-netlify deploy
+git clone https://github.com/yourusername/prism-of-torah.git
+cd prism-of-torah
 ```
+2. Start a local server:
+```bash
+python -m http.server 8000
+# or
+npx serve
+```
+3. Open `http://localhost:8000` in your browser.
 
-## Contributing
+## Deployment (Netlify)
+- Push to `main` branch for auto-deploy.
+- Manual: drag & drop folder in Netlify UI or use `netlify deploy` CLI.
+- Netlify handles minification, Gzip, HTTPS, and cache headers by default.
 
-1. Create a feature branch
-2. Make your changes
-3. Submit a pull request
-4. Ensure all tests pass
-5. Get code review approval
+## Component Usage
+- HTML: Semantic, accessible, ARIA labels, proper heading order
+- CSS: BEM naming, custom properties, responsive breakpoints, dark mode
+- JS: Modular, progressive enhancement, error handling
+
+## SEO & Accessibility
+- Meta tags, Open Graph, Twitter Cards, canonical URLs
+- robots.txt and sitemap.xml in root for search engines
+- All images have descriptive `alt` text
+- Keyboard navigation and focus management
+- Color contrast meets WCAG 2.1 AA
+
+## Manual Testing Checklist
+- [ ] Test on Chrome, Firefox, Safari, Edge (desktop & mobile)
+- [ ] Validate HTML/CSS with W3C tools
+- [ ] Use screen reader for navigation
+- [ ] Check color contrast (WebAIM)
+- [ ] Test keyboard navigation
+- [ ] Run Google PageSpeed Insights
 
 ## Performance Targets
 

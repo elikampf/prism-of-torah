@@ -50,12 +50,12 @@
             <nav class="header-nav">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="podcast.html" class="nav-link">Podcast</a>
-                <a href="books.html" class="nav-link">Books</a>
+                <a href="books.html" class="nav-link active">Books</a>
                 <a href="philosophy.html" class="nav-link">Philosophy</a>
             </nav>
 
             <!-- Newsletter Button -->
-            <a href="#newsletter" class="btn-newsletter-header">Subscribe to Newsletter</a>
+            <a href="#newsletter" class="btn-primary">Get Weekly Torah</a>
 
             <!-- Mobile Menu Toggle -->
             <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -67,175 +67,302 @@
     <main id="main-content" tabindex="-1">
         <!-- HERO SECTION -->
         <section class="hero-section" aria-label="Books Hero">
-            <div class="hero-container hero-two-col">
-                <div class="hero-content hero-col-text">
+            <div class="hero-container">
+                <div class="hero-image">
+                    <img src="images/books/prism-torah-cover-2.webp" alt="Prism of Torah Book Cover" width="462" height="462" loading="lazy">
+                </div>
+                <div class="hero-content">
                     <h1 class="hero-headline">Transform Your Torah Learning Into Life-Changing Wisdom</h1>
                     <p class="hero-subtitle">Discover practical guidance from Chazal, Rishonim, and Acharonim for modern challenges</p>
                     <div class="hero-actions-wrapper">
                         <div class="hero-buttons">
-                            <a href="#current-book" class="btn-primary">Get Prism of Torah (Available Now)</a>
-                            <a href="#upcoming" class="btn-secondary">Reserve Torah in a Flash (Spring 2025)</a>
+                            <a href="#current-book" class="btn-primary">
+                                <span class="btn-icon">📖</span>
+                                <span class="btn-text">Get Prism of Torah - $36</span>
+                            </a>
+                            <a href="#upcoming" class="btn-secondary">
+                                <span class="btn-icon">⏰</span>
+                                <span class="btn-text">Reserve Torah in a Flash</span>
+                            </a>
                         </div>
                         <p class="hero-credibility">464 pages • Hardcover • Available Now</p>
                     </div>
                 </div>
-                <div class="hero-col-image">
-                    <img src="images/book-angled-hero.png" alt="Prism of Torah Book" class="hero-book-image" width="360" height="480" loading="eager">
-                </div>
             </div>
         </section>
 
+        <!-- GRADIENT TRANSITION SECTION -->
+        <div class="hero-gradient-transition" aria-hidden="true"></div>
+
         <!-- PROBLEM SECTION -->
-        <section class="problem-section">
-            <div class="container">
-                <h2 class="problem-headline">Every week we read the parsha, but does it actually change how we live?</h2>
-                <ul class="problem-list">
-                    <li>We hear inspiring ideas, but struggle to apply them to our daily decisions.</li>
-                    <li>Parsha learning often stays theoretical, not practical.</li>
-                    <li>Stories and lessons are quickly forgotten by the next week.</li>
+        <section class="problem-section redesigned-problem-section">
+            <div class="problem-bg-accent" aria-hidden="true"></div>
+            <div class="container problem-container">
+                <div class="prism-accent-bar"></div>
+                <h2 class="problem-headline redesigned-problem-headline">
+                    Every week we read the parsha,<br>
+                    <span class="problem-headline-accent">but does it actually change how we live?</span>
+                </h2>
+                <ul class="problem-list redesigned-problem-list">
+                    <li><span class="problem-icon">💭</span> We hear inspiring ideas, but struggle to apply them to our daily decisions.</li>
+                    <li><span class="problem-icon">🌀</span> Parsha learning often stays theoretical, not practical.</li>
+                    <li><span class="problem-icon">⏳</span> Stories and lessons are quickly forgotten by the next week.</li>
                 </ul>
             </div>
         </section>
 
         <!-- SOLUTION SECTION -->
-        <section class="solution-section">
+        <section class="solution-section enhanced-method-section">
             <div class="container">
                 <h2 class="solution-headline">Our Three-Part Method</h2>
-                <div class="solution-steps">
-                    <div class="solution-step">
-                        <div class="solution-icon" aria-hidden="true">📖</div>
-                        <h3>Step 1</h3>
-                        <p>Central idea from traditional sources</p>
+                <div class="solution-steps enhanced-method-steps">
+                    <div class="solution-step enhanced-method-card">
+                        <div class="method-flow-line left" aria-hidden="true"></div>
+                        <div class="step-number-circle" style="background: linear-gradient(135deg, #42a5f5 60%, #ab47bc 100%);">1</div>
+                        <div class="step-icon method-icon-book">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="4" y="7" width="28" height="22" rx="4" fill="#42a5f5"/>
+                                <rect x="8" y="11" width="20" height="14" rx="2" fill="#fff"/>
+                                <rect x="12" y="15" width="12" height="2" rx="1" fill="#42a5f5"/>
+                                <rect x="12" y="19" width="8" height="2" rx="1" fill="#ab47bc"/>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Central idea from traditional sources</h3>
+                        <p class="step-desc">We start with a core Torah concept, rooted in Chazal, Rishonim, and Acharonim.</p>
                     </div>
-                    <div class="solution-step">
-                        <div class="solution-icon" aria-hidden="true">💡</div>
-                        <h3>Step 2</h3>
-                        <p>Practical ethical lessons</p>
+                    <div class="solution-step enhanced-method-card">
+                        <div class="method-flow-line center" aria-hidden="true"></div>
+                        <div class="step-number-circle" style="background: linear-gradient(135deg, #66bb6a 60%, #42a5f5 100%);">2</div>
+                        <div class="step-icon method-icon-lightbulb">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="18" cy="14" rx="10" ry="10" fill="#66bb6a"/>
+                                <rect x="15" y="24" width="6" height="6" rx="2" fill="#fff"/>
+                                <rect x="16.5" y="22" width="3" height="3" rx="1.5" fill="#66bb6a"/>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Practical ethical lessons</h3>
+                        <p class="step-desc">We extract actionable guidance for daily life, making Torah relevant and real.</p>
                     </div>
-                    <div class="solution-step">
-                        <div class="solution-icon" aria-hidden="true">📚</div>
-                        <h3>Step 3</h3>
-                        <p>Engaging stories that illustrate</p>
+                    <div class="solution-step enhanced-method-card">
+                        <div class="method-flow-line right" aria-hidden="true"></div>
+                        <div class="step-number-circle" style="background: linear-gradient(135deg, #ffa726 60%, #ff6b6b 100%);">3</div>
+                        <div class="step-icon method-icon-stories">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="18" cy="18" rx="14" ry="10" fill="#ffa726"/>
+                                <ellipse cx="18" cy="18" rx="8" ry="6" fill="#fff"/>
+                                <ellipse cx="18" cy="18" rx="4" ry="3" fill="#ff6b6b"/>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Engaging stories that illustrate</h3>
+                        <p class="step-desc">Memorable stories and examples bring the lesson to life and make it stick.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- CURRENT BOOK SHOWCASE SECTION -->
-        <section id="current-book" class="current-book-showcase single-book-showcase">
-            <div class="container book-flex-row">
+        <section id="current-book" class="current-book-showcase single-book-showcase polished-book-section">
+            <div class="book-bg-accent" aria-hidden="true"></div>
+            <div class="container book-flex-row polished-book-flex">
                 <div class="book-image-col">
-                    <img src="images/books/prism-torah-cover.webp" alt="Prism of Torah Book Cover" class="book-cover" width="260" height="380" loading="lazy">
+                    <img src="images/books/prism-torah-cover.webp" alt="Prism of Torah Book Cover" class="book-cover polished-book-image" width="400" height="520" loading="lazy">
                 </div>
-                <div class="book-content-col">
-                    <h2 class="book-main-headline">The Complete Weekly Parsha Experience</h2>
-                    <ul class="book-main-features">
-                        <li>📖 Deep classical sources made accessible</li>
-                        <li>💡 Real-life applications for modern challenges</li>
-                        <li>📚 Stories that stick with you</li>
-                        <li>🍽️ Perfect for Shabbos table discussions and personal growth</li>
+                <div class="book-content-col polished-book-content">
+                    <h2 class="book-main-headline polished-book-headline">The Complete Weekly Parsha Experience</h2>
+                    <ul class="book-main-features polished-book-features">
+                        <li><span class="feature-icon">✔️</span> Deep classical sources made accessible</li>
+                        <li><span class="feature-icon">✔️</span> Real-life applications for modern challenges</li>
+                        <li><span class="feature-icon">✔️</span> Stories that stick with you</li>
+                        <li><span class="feature-icon">✔️</span> Perfect for Shabbos table discussions and personal growth</li>
                     </ul>
-                    <div class="book-main-cta-row">
-                        <span class="book-price">$36</span>
-                        <a href="#" class="btn-primary book-main-cta">Order Now</a>
+                    <div class="book-main-cta-row polished-book-cta-row">
+                        <span class="book-price polished-book-price">$36</span>
+                        <a href="#" class="btn-primary book-main-cta polished-book-cta">Order Now</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- TESTIMONIALS SECTION -->
-        <section class="testimonials-section">
+        <section class="testimonials-section redesigned-testimonials">
             <div class="container">
-                <h2 class="testimonials-title">What Torah Leaders Are Saying</h2>
-                <div class="testimonials-grid">
-                    <div class="testimonial">
-                        <blockquote>"Practical tools that facilitate spiritual growth"</blockquote>
-                        <footer>Rabbi Elimelech Kornfeld</footer>
+                <h2 class="testimonials-title redesigned-testimonials-title">What Torah Leaders Are Saying</h2>
+                <div class="testimonials-grid redesigned-testimonials-grid">
+                    <div class="testimonial redesigned-testimonial-card">
+                        <div class="quote-mark" aria-hidden="true">"</div>
+                        <blockquote class="testimonial-quote redesigned-quote">Practical tools that facilitate spiritual growth</blockquote>
+                        <footer class="testimonial-footer redesigned-footer">
+                            <span class="rabbi-name">Rabbi Elimelech Kornfeld</span>
+                        </footer>
                     </div>
-                    <div class="testimonial">
-                        <blockquote>"Replete with pearls of wisdom"</blockquote>
-                        <footer>Rabbi Asher Weiss</footer>
+                    <div class="testimonial redesigned-testimonial-card featured">
+                        <div class="quote-mark" aria-hidden="true">"</div>
+                        <blockquote class="testimonial-quote redesigned-quote">Replete with pearls of wisdom</blockquote>
+                        <footer class="testimonial-footer redesigned-footer">
+                            <span class="rabbi-name">Rabbi Asher Weiss</span>
+                        </footer>
                     </div>
-                    <div class="testimonial">
-                        <blockquote>"Explaining contemporary concepts in familiar language"</blockquote>
-                        <footer>Rabbi Avishai David</footer>
+                    <div class="testimonial redesigned-testimonial-card">
+                        <div class="quote-mark" aria-hidden="true">"</div>
+                        <blockquote class="testimonial-quote redesigned-quote">Explaining contemporary concepts in familiar language</blockquote>
+                        <footer class="testimonial-footer redesigned-footer">
+                            <span class="rabbi-name">Rabbi Avishai David</span>
+                        </footer>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- COMING SOON SECTION -->
-        <section class="coming-soon-section">
-            <div class="container coming-soon-flex-row">
-                <div class="coming-soon-image-col">
-                    <img src="images/books/upcoming-book-mockup.webp" alt="Torah in a Flash Book Mockup" class="coming-soon-book-cover" width="220" height="320" loading="lazy">
-                </div>
-                <div class="coming-soon-content-col">
-                    <h2 class="coming-soon-headline">Coming Soon: Torah in a Flash</h2>
-                    <p class="coming-soon-tagline">Lightning-fast Torah insights for busy lives</p>
-                    <ul class="coming-soon-features">
-                        <li><strong>Release:</strong> Spring 2025</li>
-                        <li><strong>Format:</strong> Quick-read format</li>
-                        <li><strong>Perfect for:</strong> Daily inspiration, on-the-go learning</li>
-                    </ul>
-                    <form class="coming-soon-form" name="early-access" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-                        <input type="hidden" name="form-name" value="early-access">
-                        <input type="hidden" name="bot-field">
-                        <div class="coming-soon-form-row">
-                            <input type="email" name="email" placeholder="Your email address" required class="coming-soon-input">
-                            <button type="submit" class="btn-primary coming-soon-cta">Get Early Access + 20% Off</button>
+        <section class="coming-soon-section exciting-preview-section">
+            <div class="preview-bg-accent" aria-hidden="true"></div>
+            <div class="container coming-soon-flex-row exciting-preview-flex">
+                <div class="coming-soon-image-col preview-image-col">
+                    <div class="book-preview-wrapper">
+                        <img src="images/books/upcoming-book-mockup.webp" alt="Torah in a Flash Book Mockup" class="coming-soon-book-cover preview-book-image" width="300" height="420" loading="lazy">
+                        <div class="coming-soon-badge preview-badge">
+                            <span class="badge-text">Spring 2025</span>
                         </div>
-                    </form>
+                    </div>
+                </div>
+                <div class="coming-soon-content-col preview-content-col">
+                    <div class="preview-header">
+                        <h2 class="coming-soon-headline exciting-preview-headline">
+                            <span class="headline-accent">Coming Soon:</span><br>
+                            Torah in a Flash
+                        </h2>
+                        <p class="coming-soon-tagline preview-tagline">Lightning-fast Torah insights for busy lives</p>
+                    </div>
+                    
+                    <div class="preview-features">
+                        <h3 class="features-title">What to Expect</h3>
+                        <ul class="coming-soon-features preview-features-list">
+                            <li><span class="feature-icon">⚡</span> Quick-read format for on-the-go learning</li>
+                            <li><span class="feature-icon">📱</span> Perfect for daily inspiration and busy schedules</li>
+                            <li><span class="feature-icon">🎯</span> Focused insights that stick with you</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="exclusive-offer">
+                        <h3 class="offer-title">Get Early Access + 20% Off</h3>
+                        <p class="offer-description">Be among the first to experience this revolutionary approach to Torah learning</p>
+                        
+                        <form class="coming-soon-form exciting-preview-form" name="early-access" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                            <input type="hidden" name="form-name" value="early-access">
+                            <input type="hidden" name="bot-field">
+                            <div class="coming-soon-form-row preview-form-row">
+                                <input type="email" name="email" placeholder="Enter your email address" required class="coming-soon-input preview-input">
+                                <button type="submit" class="btn-primary coming-soon-cta preview-cta">
+                                    <span class="cta-text">Get Early Access</span>
+                                    <span class="cta-badge">20% Off</span>
+                                </button>
+                            </div>
+                            <p class="form-disclaimer">Join the waitlist and be notified when pre-orders open</p>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- AUTHOR CREDIBILITY SECTION -->
-        <section class="author-credibility-section">
-            <div class="container author-credibility-flex-row">
-                <div class="author-photo-col">
-                    <img src="images/author/reb-asaf-main.webp" alt="Rabbi Asaf Aharon Prisman" class="author-photo" width="160" height="160" loading="lazy">
+        <section class="author-credibility-section enhanced-author-section">
+            <div class="author-bg-accent" aria-hidden="true"></div>
+            <div class="container author-credibility-flex-row enhanced-author-flex">
+                <div class="author-photo-col enhanced-photo-col">
+                    <div class="author-photo-wrapper">
+                        <img src="images/author/reb-asaf-main.webp" alt="Rabbi Asaf Aharon Prisman" class="author-photo enhanced-author-photo" width="200" height="200" loading="lazy">
+                        <div class="author-photo-accent"></div>
+                    </div>
                 </div>
-                <div class="author-quote-col">
-                    <blockquote class="author-quote">“My prayer is that this sefer will inject spirituality into the lives of Jews worldwide, enhancing their Shabbos and strengthening their yiras Shamayim and Jewish pride.”</blockquote>
-                    <p class="author-bio">Rabbi Asaf Aharon Prisman is the creator of the Prism of Torah podcast and author of multiple sefarim. He is known for making deep Torah concepts accessible and relevant, drawing on years of experience teaching and inspiring Jews around the world.</p>
+                <div class="author-quote-col enhanced-quote-col">
+                    <div class="quote-container">
+                        <div class="quote-mark-large" aria-hidden="true">"</div>
+                        <blockquote class="author-quote enhanced-author-quote">
+                            My prayer is that this sefer will inject spirituality into the lives of Jews worldwide, enhancing their Shabbos and strengthening their yiras Shamayim and Jewish pride.
+                        </blockquote>
+                    </div>
+                    
+                    <div class="author-bio enhanced-author-bio">
+                        <h3 class="author-name">Rabbi Asaf Aharon Prisman</h3>
+                        <p class="author-description">
+                            Creator of the Prism of Torah podcast and author of multiple sefarim. Known for making deep Torah concepts accessible and relevant, drawing on years of experience teaching and inspiring Jews around the world.
+                        </p>
+                        
+                        <div class="author-credentials">
+                            <div class="credential-item">
+                                <span class="credential-icon">🎙️</span>
+                                <span class="credential-text">Creator, Prism of Torah Podcast</span>
+                            </div>
+                            <div class="credential-item">
+                                <span class="credential-icon">📚</span>
+                                <span class="credential-text">Author of Multiple Sefarim</span>
+                            </div>
+                            <div class="credential-item">
+                                <span class="credential-icon">🌍</span>
+                                <span class="credential-text">International Torah Educator</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     
-    <!-- FOOTER SECTION -->
-    <footer class="footer" role="contentinfo" aria-label="Site footer">
+    <!-- SITE FOOTER -->
+    <footer class="site-footer" role="contentinfo">
         <div class="footer-container">
-            <!-- Contact Section -->
-            <div class="footer-contact">
-                <h3>Contact</h3>
-                <a href="mailto:prismoftorah@gmail.com">prismoftorah@gmail.com</a>
+            <div class="footer-top">
+                <div class="footer-col footer-brand">
+                    <a href="/" class="footer-logo-link">
+                        <img src="images/logo/prism-logo-footer.webp" alt="Prism of Torah Logo" class="footer-logo">
+                        <span class="footer-brand-name">Prism of Torah</span>
+                    </a>
+                    <p class="footer-tagline">Torah that speaks your language. Insights that shape your life.</p>
+                </div>
+
+                <div class="footer-col footer-newsletter-wrapper">
+                    <h3 class="footer-heading">Join The Weekly Journey</h3>
+                    <p class="footer-newsletter-description">Get transformative Torah insights delivered straight to your inbox.</p>
+                    <form name="footer-newsletter" class="footer-newsletter-form" netlify>
+                        <div class="form-group-h">
+                            <label for="footer-email" class="visually-hidden">Email address</label>
+                            <input type="email" id="footer-email" name="email" class="footer-newsletter-input" placeholder="Your email address" required>
+                            <button type="submit" class="btn-primary footer-newsletter-button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="footer-col footer-links-col">
+                     <h3 class="footer-heading">Explore</h3>
+                     <nav class="footer-nav">
+                         <a href="index.html">Home</a>
+                         <a href="podcast.html">Podcast</a>
+                         <a href="books.html">Books</a>
+                         <a href="philosophy.html">Philosophy</a>
+                     </nav>
+                </div>
+
+                 <div class="footer-col footer-contact-col">
+                     <h3 class="footer-heading">Contact Us</h3>
+                     <a href="mailto:prismoftorah@gmail.com" class="footer-contact-link">
+                        <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 4.5h21A1.5 1.5 0 0 1 24 6v12a1.5 1.5 0 0 1-1.5 1.5h-21A1.5 1.5 0 0 1 0 18V6A1.5 1.5 0 0 1 1.5 4.5zM21 8.355l-8.42 5.613a1.5 1.5 0 0 1-1.16.002L3 8.355V18h18V8.355zM3.52 6l8.48 5.653a.5.5 0 0 0 .387.001L20.48 6H3.52z"></path></svg>
+                        <span>prismoftorah@gmail.com</span>
+                     </a>
+                </div>
             </div>
 
-            <!-- Stay Connected Section -->
-            <div class="footer-newsletter">
-                <h3>Stay Connected</h3>
-                <form class="footer-newsletter-form" action="mailto:eli@elipodcastproductions.com" method="post" enctype="text/plain">
-                    <input type="hidden" name="subject" value="Newsletter Signup">
-                    <input type="email" name="body" class="footer-newsletter-input" placeholder="Enter email" required aria-label="Email address for newsletter">
-                    <button type="submit" class="footer-newsletter-button">Subscribe</button>
-                </form>
-            </div>
-
-            <!-- Legal Section -->
-            <div class="footer-legal">
-                <a href="privacy.html">Privacy Policy</a>
-                <span class="footer-legal-separator">|</span>
-                <a href="terms.html">Terms &amp; Conditions</a>
-            </div>
-
-            <!-- Copyright Section -->
-            <div class="footer-copyright">
-                © 2025 Prism of Torah • Design &amp; podcast production by <a href="mailto:eli@elipodcastproductions.com">Eli Podcast Productions</a>
+            <div class="footer-bottom">
+                <div class="footer-legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+                <div class="footer-copyright-notice">
+                    <p>© 2025 Prism of Torah | Design & Production © <a href="mailto:eli@elipodcastproductions.com">Eli Podcast Productions</a></p>
+                </div>
             </div>
         </div>
     </footer>
+    <!-- END SITE FOOTER -->
 
     <script src="js/main.js"></script>
     <script src="js/forms.js"></script>

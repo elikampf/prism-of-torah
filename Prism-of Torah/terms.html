@@ -22,7 +22,7 @@
                 <a href="books.html" class="nav-link">Books</a>
                 <a href="philosophy.html" class="nav-link">Philosophy</a>
             </nav>
-            <a href="#newsletter" class="btn-newsletter-header">Subscribe to Newsletter</a>
+            <a href="#newsletter" class="btn-primary">Get Weekly Torah</a>
             <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="hamburger"></span>
             </button>
@@ -37,10 +37,14 @@
                 </div>
             </div>
         </section>
+        
+        <!-- GRADIENT TRANSITION SECTION -->
+        <div class="hero-gradient-transition" aria-hidden="true"></div>
+        
         <section class="terms-section container" aria-label="Terms and Conditions Content">
             <article class="terms-article">
                 <h2>1. Introduction</h2>
-                <p>Welcome to Prism of Torah (prismoftorah.org) ("we," "our," or "us"). These Terms and Conditions govern your use of our website, including our podcast content and book selling services. By accessing or using our website, you agree to be bound by these Terms and Conditions.</p>
+                <p>Welcome to Prism of Torah (prismoftorah.org) ("we," "our," or "us"). These Terms and Conditions govern your use of our website, including our podcast and book selling services. By accessing or using our website, you agree to be bound by these Terms and Conditions.</p>
                 <h2>2. Definitions</h2>
                 <ul>
                     <li><strong>"Website"</strong> refers to Prism of Torah, accessible at prismoftorah.org</li>
@@ -91,51 +95,61 @@
             </article>
         </section>
     </main>
-    <footer class="footer" role="contentinfo" aria-label="Site footer">
+    <!-- SITE FOOTER -->
+    <footer class="site-footer" role="contentinfo">
         <div class="footer-container">
-            <div class="footer-grid">
-                <nav class="footer-column" aria-label="Quick Navigation">
-                    <h4>Quick Navigation</h4>
-                    <ul>
-                        <li><a href="philosophy.html">About Reb Asaf</a></li>
-                        <li><a href="philosophy.html#speaking">Speaking Inquiries</a></li>
-                        <li><a href="philosophy.html#contact">Contact Us</a></li>
-                        <li><a href="books.html">Get the Books</a></li>
-                    </ul>
-                </nav>
-                <nav class="footer-column" aria-label="Latest Episodes">
-                    <h4>Latest Episodes</h4>
-                    <ul>
-                        <li><a href="podcast.html">This Week's Parsha</a></li>
-                        <li><a href="podcast.html?filter=holidays">Recent Holiday Insights</a></li>
-                        <li><a href="podcast.html">Most Popular Episodes</a></li>
-                        <li><a href="podcast.html">Complete Archive</a></li>
-                    </ul>
-                </nav>
-                <nav class="footer-column" aria-label="Get the Books">
-                    <h4>Get the Books</h4>
-                    <ul>
-                        <li><a href="books.html">Order "Prism of Torah"</a></li>
-                        <li><a href="books.html#upcoming">Join Launch List</a></li>
-                        <li><a href="books.html#gift">Gift Options</a></li>
-                        <li><a href="mailto:prismoftorah@gmail.com">Bulk Orders</a></li>
-                    </ul>
-                </nav>
-                <nav class="footer-column" aria-label="Connect">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li>Email: <a href="mailto:prismoftorah@gmail.com">prismoftorah@gmail.com</a></li>
-                        <li>Technical: <a href="mailto:eli@elipodcastproductions.com">eli@elipodcastproductions.com</a></li>
-                        <li>Location: Ramat Beit Shemesh, Israel</li>
-                        <li><a href="books.html">Get the Books</a></li>
-                    </ul>
-                </nav>
+            <div class="footer-top">
+                <div class="footer-col footer-brand">
+                    <a href="/" class="footer-logo-link">
+                        <img src="images/logo/prism-logo-footer.webp" alt="Prism of Torah Logo" class="footer-logo">
+                        <span class="footer-brand-name">Prism of Torah</span>
+                    </a>
+                    <p class="footer-tagline">Torah that speaks your language. Insights that shape your life.</p>
+                </div>
+
+                <div class="footer-col footer-newsletter-wrapper">
+                    <h3 class="footer-heading">Join The Weekly Journey</h3>
+                    <p class="footer-newsletter-description">Get transformative Torah insights delivered straight to your inbox.</p>
+                    <form name="footer-newsletter" class="footer-newsletter-form" netlify>
+                        <div class="form-group-h">
+                            <label for="footer-email" class="visually-hidden">Email address</label>
+                            <input type="email" id="footer-email" name="email" class="footer-newsletter-input" placeholder="Your email address" required>
+                            <button type="submit" class="btn-primary footer-newsletter-button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="footer-col footer-links-col">
+                     <h3 class="footer-heading">Explore</h3>
+                     <nav class="footer-nav">
+                         <a href="index.html">Home</a>
+                         <a href="podcast.html">Podcast</a>
+                         <a href="books.html">Books</a>
+                         <a href="philosophy.html">Philosophy</a>
+                     </nav>
+                </div>
+
+                 <div class="footer-col footer-contact-col">
+                     <h3 class="footer-heading">Contact Us</h3>
+                     <a href="mailto:prismoftorah@gmail.com" class="footer-contact-link">
+                        <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 4.5h21A1.5 1.5 0 0 1 24 6v12a1.5 1.5 0 0 1-1.5 1.5h-21A1.5 1.5 0 0 1 0 18V6A1.5 1.5 0 0 1 1.5 4.5zM21 8.355l-8.42 5.613a1.5 1.5 0 0 1-1.16.002L3 8.355V18h18V8.355zM3.52 6l8.48 5.653a.5.5 0 0 0 .387.001L20.48 6H3.52z"></path></svg>
+                        <span>prismoftorah@gmail.com</span>
+                     </a>
+                </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2025 Eli Podcast Productions • <a href="#privacy">Privacy Policy</a> • <a href="#unsubscribe">Unsubscribe</a> • <a href="index.html">Home</a></p>
+                <div class="footer-legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+                <div class="footer-copyright-notice">
+                    <p>© 2025 Prism of Torah | Design & Production © <a href="mailto:eli@elipodcastproductions.com">Eli Podcast Productions</a></p>
+                </div>
             </div>
         </div>
     </footer>
+    <!-- END SITE FOOTER -->
     <script src="js/main.js"></script>
     <script src="js/search.js"></script>
     <script src="js/forms.js"></script>

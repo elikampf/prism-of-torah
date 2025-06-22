@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <!-- Podcast Structured Data -->
     <script type="application/ld+json">
       {
@@ -61,14 +62,14 @@
 
             <!-- Navigation -->
             <nav class="header-nav">
-                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link active">Home</a>
                 <a href="podcast.html" class="nav-link">Podcast</a>
                 <a href="books.html" class="nav-link">Books</a>
                 <a href="philosophy.html" class="nav-link">Philosophy</a>
             </nav>
 
             <!-- Newsletter Button -->
-            <a href="#newsletter" class="btn-newsletter-header">Subscribe to Newsletter</a>
+            <a href="#newsletter" class="btn-primary">Get Weekly Torah</a>
 
             <!-- Mobile Menu Toggle -->
             <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -90,17 +91,19 @@
                         <span>"Emunah is in your mind. Bitachon, it became part of you."</span>
                         <cite>- Reb Asaf Aharon Prisman</cite>
                     </blockquote>
+                    <div class="hero-actions-wrapper">
+                        <div class="hero-buttons">
+                            <a href="#latest-episode" class="btn-primary">Listen Now</a>
+                            <a href="books.html" class="btn-secondary">Get the Book</a>
+                        </div>
+                        <p class="hero-credibility">7 years • 325+ episodes • Growing weekly community</p>
+                    </div>
                 </div>
-            </div>
-            <!-- Moved hero-actions-wrapper outside the grid container for full centering -->
-            <div class="hero-actions-wrapper">
-                <div class="hero-buttons">
-                    <a href="#latest-episode" class="btn-primary">Listen Now</a>
-                    <a href="books.html" class="btn-secondary">Get the Book</a>
-                </div>
-                <p class="hero-credibility">7 years • 325+ episodes • Growing weekly community</p>
             </div>
         </section>
+
+        <!-- GRADIENT TRANSITION SECTION -->
+        <div class="hero-gradient-transition" aria-hidden="true"></div>
 
         <!-- LATEST EPISODE SECTION -->
         <section id="latest-episode" class="latest-episode-section" aria-label="Latest Podcast Episode">
@@ -111,11 +114,22 @@
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/52sd1gVqOJD8iao6QPx7dB" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Spotify Podcast Player"></iframe>
                 </div>
                 <div class="platform-links">
-                    <p>Also available on:</p>
-                    <a href="https://bit.ly/4j0WSzR" class="platform-link" target="_blank" rel="noopener">Apple Podcasts</a>
-                    <a href="https://bit.ly/4j0WSzR" class="platform-link" target="_blank" rel="noopener">Spotify</a>
-                    <a href="https://bit.ly/44nfw0f" class="platform-link" target="_blank" rel="noopener">YouTube</a>
-                    <a href="https://bit.ly/4jDERYK" class="platform-link" target="_blank" rel="noopener">24six</a>
+                    <a href="https://bit.ly/4j0WSzR" target="_blank" rel="noopener">
+                        <img src="images/platforms/apple-podcasts.svg" alt="Apple Podcasts logo">
+                        <span class="visually-hidden">Apple Podcasts</span>
+                    </a>
+                    <a href="https://bit.ly/4j0WSzR" target="_blank" rel="noopener">
+                        <img src="images/platforms/spotify.svg" alt="Spotify logo">
+                        <span class="visually-hidden">Spotify</span>
+                    </a>
+                    <a href="https://bit.ly/44nfw0f" target="_blank" rel="noopener">
+                        <img src="images/platforms/youtube.svg" alt="YouTube logo">
+                        <span class="visually-hidden">YouTube</span>
+                    </a>
+                    <a href="https://bit.ly/4jDERYK" target="_blank" rel="noopener">
+                        <img src="images/platforms/24six.svg" alt="24six logo">
+                        <span class="visually-hidden">24six</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -136,7 +150,7 @@
                         <p class="card-highlight">Once you see it, you can't unsee it. Ever.</p>
                     </article>
                     <article class="why-listen-card" aria-label="Weekly Reset">
-                        <div class="card-icon" aria-hidden="true">🔥</div>
+                        <div class="card-icon" aria-hidden="true">🔋</div>
                         <h3>Weekly Reset</h3>
                         <p class="card-highlight">15 minutes that hit harder than your morning coffee.</p>
                     </article>
@@ -184,34 +198,58 @@
             </div>
         </section>
 
-        <!-- BOOK PROMOTION SECTION -->
-        <section class="book-promotion-section" aria-label="Book Promotion">
+        <!-- HORIZONTAL BOOK SHOWCASE -->
+        <section class="horizontal-book-section" aria-label="Book Collection">
             <div class="container">
-                <h2 class="book-section-title">Take It Deeper: The Complete Collection</h2>
-                <div class="book-showcase">
-                    <div class="books-row">
-                        <article class="current-book" aria-label="Current Book">
-                            <img src="images/books/prism-torah-cover.webp" alt="Prism of Torah Book Cover" class="book-cover" width="220" height="320" loading="lazy">
-                            <div class="book-details">
-                                <h3>Prism of Torah</h3>
-                                <p class="book-subtitle">464 pages of transformative Torah wisdom</p>
+                <header class="section-header-centered">
+                    <h2 class="section-title-h">Complete Torah Learning Collection</h2>
+                    <p class="section-subtitle-h">From weekly insights to deep study.</p>
+                </header>
+
+                <div class="book-card-stack">
+
+                    <!-- Card 1: Prism of Torah (Available) -->
+                    <article class="book-card-horizontal available">
+                        <div class="book-card-h-image-wrapper">
+                            <img src="images/books/prism-torah-cover.webp" alt="Cover of Prism of Torah" class="book-card-h-image">
+                        </div>
+                        <div class="book-card-h-content">
+                            <div class="book-card-h-header">
+                                <h3 class="book-card-h-title">Prism of Torah</h3>
+                                <span class="badge available-badge">Available Now</span>
                             </div>
-                        </article>
-                        <article class="upcoming-book" aria-label="Upcoming Book">
-                            <img src="images/books/upcoming-book-mockup.webp" alt="Dvar Torah in a Flash - Coming Soon" class="book-cover" width="220" height="320" loading="lazy">
-                            <div class="book-details">
-                                <h3>Dvar Torah in a Flash</h3>
-                                <p class="book-subtitle">Short devrei torah for all occasions</p>
-                                <p class="book-status">Coming Soon</p>
+                            <p class="book-card-h-description">A 464-page collection of deep Torah insights, practical takeaways, and memorable stories for every week of the year.</p>
+                            <div class="book-card-h-footer">
+                                <span class="book-card-h-price">$29.99</span>
+                                <a href="books.html#prism-of-torah" class="btn-primary">Order Now</a>
                             </div>
-                        </article>
-                    </div>
-                    <div class="book-actions">
-                        <a href="books.html" class="btn-primary">More Info</a>
-                    </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Dvar Torah in a Flash (Coming Soon) -->
+                    <article class="book-card-horizontal upcoming">
+                        <div class="book-card-h-image-wrapper">
+                            <img src="images/books/upcoming-book-mockup.webp" alt="Cover of Dvar Torah in a Flash" class="book-card-h-image">
+                        </div>
+                        <div class="book-card-h-content">
+                             <div class="book-card-h-header">
+                                <h3 class="book-card-h-title">Dvar Torah in a Flash</h3>
+                                <span class="badge upcoming-badge">Launching Spring 2025</span>
+                            </div>
+                            <p class="book-card-h-description">Short, powerful, and practical Torah thoughts for the Shabbos table, your daily commute, or any time you need a flash of inspiration.</p>
+                            <div class="book-card-h-footer">
+                               <a href="books.html#dvar-torah-in-a-flash" class="btn-secondary">Get Early Access</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="section-footer-link">
+                    <a href="books.html">View complete collection</a>
                 </div>
             </div>
         </section>
+        <!-- END HORIZONTAL BOOK SHOWCASE -->
 
         <!-- SOCIAL PROOF SECTION -->
         <section class="testimonials-section" aria-label="Listener Testimonials">
@@ -235,38 +273,61 @@
         </section>
     </main>
 
-    <!-- FOOTER SECTION -->
-    <footer class="footer" role="contentinfo" aria-label="Site footer">
+    <!-- SITE FOOTER -->
+    <footer class="site-footer" role="contentinfo">
         <div class="footer-container">
-            <!-- Contact Section -->
-            <div class="footer-contact">
-                <h3>Contact</h3>
-                <a href="mailto:prismoftorah@gmail.com">prismoftorah@gmail.com</a>
+            <div class="footer-top">
+                <div class="footer-col footer-brand">
+                    <a href="/" class="footer-logo-link">
+                        <img src="images/logo/prism-logo-footer.webp" alt="Prism of Torah Logo" class="footer-logo">
+                        <span class="footer-brand-name">Prism of Torah</span>
+                    </a>
+                    <p class="footer-tagline">Torah that speaks your language. Insights that shape your life.</p>
+                </div>
+
+                <div class="footer-col footer-newsletter-wrapper">
+                    <h3 class="footer-heading">Join The Weekly Journey</h3>
+                    <p class="footer-newsletter-description">Get transformative Torah insights delivered straight to your inbox.</p>
+                    <form name="footer-newsletter" class="footer-newsletter-form" netlify>
+                        <div class="form-group-h">
+                            <label for="footer-email" class="visually-hidden">Email address</label>
+                            <input type="email" id="footer-email" name="email" class="footer-newsletter-input" placeholder="Your email address" required>
+                            <button type="submit" class="btn-primary footer-newsletter-button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="footer-col footer-links-col">
+                     <h3 class="footer-heading">Explore</h3>
+                     <nav class="footer-nav">
+                         <a href="index.html">Home</a>
+                         <a href="podcast.html">Podcast</a>
+                         <a href="books.html">Books</a>
+                         <a href="philosophy.html">Philosophy</a>
+                     </nav>
+                </div>
+
+                 <div class="footer-col footer-contact-col">
+                     <h3 class="footer-heading">Contact Us</h3>
+                     <a href="mailto:prismoftorah@gmail.com" class="footer-contact-link">
+                        <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 4.5h21A1.5 1.5 0 0 1 24 6v12a1.5 1.5 0 0 1-1.5 1.5h-21A1.5 1.5 0 0 1 0 18V6A1.5 1.5 0 0 1 1.5 4.5zM21 8.355l-8.42 5.613a1.5 1.5 0 0 1-1.16.002L3 8.355V18h18V8.355zM3.52 6l8.48 5.653a.5.5 0 0 0 .387.001L20.48 6H3.52z"></path></svg>
+                        <span>prismoftorah@gmail.com</span>
+                     </a>
+                </div>
             </div>
 
-            <!-- Stay Connected Section -->
-            <div class="footer-newsletter">
-                <h3>Stay Connected</h3>
-                <form class="footer-newsletter-form" action="mailto:eli@elipodcastproductions.com" method="post" enctype="text/plain">
-                    <input type="hidden" name="subject" value="Newsletter Signup">
-                    <input type="email" name="body" class="footer-newsletter-input" placeholder="Enter email" required aria-label="Email address for newsletter">
-                    <button type="submit" class="footer-newsletter-button">Subscribe</button>
-                </form>
-            </div>
-
-            <!-- Legal Section -->
-            <div class="footer-legal">
-                <a href="privacy.html">Privacy Policy</a>
-                <span class="footer-legal-separator">|</span>
-                <a href="terms.html">Terms &amp; Conditions</a>
-            </div>
-
-            <!-- Copyright Section -->
-            <div class="footer-copyright">
-                © 2025 Prism of Torah • Design &amp; podcast production by <a href="mailto:eli@elipodcastproductions.com">Eli Podcast Productions</a>
+            <div class="footer-bottom">
+                <div class="footer-legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+                <div class="footer-copyright-notice">
+                    <p>© 2025 Prism of Torah | Design & Production © <a href="mailto:eli@elipodcastproductions.com">Eli Podcast Productions</a></p>
+                </div>
             </div>
         </div>
     </footer>
+    <!-- END SITE FOOTER -->
 
     <script src="js/main.js"></script>
     <script src="js/search.js"></script>

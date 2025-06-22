@@ -51,13 +51,13 @@
             <!-- Navigation -->
             <nav class="header-nav">
                 <a href="index.html" class="nav-link">Home</a>
-                <a href="podcast.html" class="nav-link">Podcast</a>
+                <a href="podcast.html" class="nav-link active">Podcast</a>
                 <a href="books.html" class="nav-link">Books</a>
                 <a href="philosophy.html" class="nav-link">Philosophy</a>
             </nav>
 
             <!-- Newsletter Button -->
-            <a href="#newsletter" class="btn-newsletter-header">Subscribe to Newsletter</a>
+            <a href="#newsletter" class="btn-primary">Get Weekly Torah</a>
 
             <!-- Mobile Menu Toggle -->
             <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -70,17 +70,90 @@
         <!-- HERO SECTION -->
         <section class="hero-section" aria-label="Podcast Archive Hero">
             <div class="hero-container">
-                <div class="hero-content" style="margin: 0 auto; text-align: center;">
-                    <h1 class="hero-headline">325+ Episodes of Torah Transformation</h1>
-                    <p class="hero-subtitle">Seven years of weekly wisdom, organized by parsha</p>
+                <div class="hero-image">
+                    <img src="images/logo/cover.png" alt="Prism of Torah Podcast Cover" width="462" height="462" loading="lazy">
+                </div>
+                <div class="hero-content">
+                    <h1 class="hero-headline">
+                        <span class="hero-number">325+</span>
+                        <span class="hero-main-text">Episodes of Torah</span>
+                        <span class="hero-accent-text">Transformation</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Seven years of weekly wisdom, organized by parsha
+                    </p>
+                    
+                    <!-- Enhanced Stats Display -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="7">7</span>
+                            <span class="stat-label">Years</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="325">325+</span>
+                            <span class="stat-label">Episodes</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="54">54</span>
+                            <span class="stat-label">Parshiot</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Enhanced CTA Buttons -->
+                    <div class="hero-actions-wrapper">
+                        <div class="hero-buttons">
+                            <a href="#latest-episode" class="btn-primary btn-cta">
+                                <span class="btn-icon">▶</span>
+                                <span class="btn-text">Listen Now</span>
+                            </a>
+                            <a href="#episode-archive" class="btn-secondary">
+                                <span class="btn-icon">📚</span>
+                                <span class="btn-text">Browse Archive</span>
+                            </a>
+                        </div>
+                        
+                        <!-- Enhanced Credibility Line -->
+                        <div class="hero-credibility">
+                            <span class="credibility-icon">⭐</span>
+                            <span class="credibility-text">Trusted by thousands of listeners worldwide</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="hero-actions-wrapper">
-                <div class="hero-buttons">
-                    <a href="#latest-episode" class="btn-primary">Listen Now</a>
-                    <a href="#episode-archive" class="btn-secondary">Browse Archive</a>
+        </section>
+
+        <!-- GRADIENT TRANSITION SECTION -->
+        <div class="hero-gradient-transition" aria-hidden="true"></div>
+
+        <!-- LATEST EPISODE SECTION -->
+        <section id="latest-episode" class="latest-episode-section" aria-label="Latest Podcast Episode">
+            <div class="container">
+                <p class="section-subtitle">Listen to the most recent episode below or browse the full archive.</p>
+                <div class="spotify-embed" aria-label="Spotify player">
+                    <h2>This Week's Episode</h2>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/52sd1gVqOJD8iao6QPx7dB" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Spotify Podcast Player"></iframe>
                 </div>
-                <p class="hero-credibility">7 years • 325+ episodes • Organized by Torah portion</p>
+                <div class="platform-links">
+                    <a href="https://bit.ly/4j0WSzR" target="_blank" rel="noopener">
+                        <img src="images/platforms/apple-podcasts.svg" alt="Apple Podcasts logo">
+                        <span class="visually-hidden">Apple Podcasts</span>
+                    </a>
+                    <a href="https://bit.ly/4j0WSzR" target="_blank" rel="noopener">
+                        <img src="images/platforms/spotify.svg" alt="Spotify logo">
+                        <span class="visually-hidden">Spotify</span>
+                    </a>
+                    <a href="https://bit.ly/44nfw0f" target="_blank" rel="noopener">
+                        <img src="images/platforms/youtube.svg" alt="YouTube logo">
+                        <span class="visually-hidden">YouTube</span>
+                    </a>
+                    <a href="https://bit.ly/4jDERYK" target="_blank" rel="noopener">
+                        <img src="images/platforms/24six.svg" alt="24six logo">
+                        <span class="visually-hidden">24six</span>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -174,38 +247,61 @@
         </section>
     </main>
     
-    <!-- FOOTER SECTION -->
-    <footer class="footer" role="contentinfo" aria-label="Site footer">
+    <!-- SITE FOOTER -->
+    <footer class="site-footer" role="contentinfo">
         <div class="footer-container">
-            <!-- Contact Section -->
-            <div class="footer-contact">
-                <h3>Contact</h3>
-                <a href="mailto:prismoftorah@gmail.com">prismoftorah@gmail.com</a>
+            <div class="footer-top">
+                <div class="footer-col footer-brand">
+                    <a href="/" class="footer-logo-link">
+                        <img src="images/logo/prism-logo-footer.webp" alt="Prism of Torah Logo" class="footer-logo">
+                        <span class="footer-brand-name">Prism of Torah</span>
+                    </a>
+                    <p class="footer-tagline">Torah that speaks your language. Insights that shape your life.</p>
+                </div>
+
+                <div class="footer-col footer-newsletter-wrapper">
+                    <h3 class="footer-heading">Join The Weekly Journey</h3>
+                    <p class="footer-newsletter-description">Get transformative Torah insights delivered straight to your inbox.</p>
+                    <form name="footer-newsletter" class="footer-newsletter-form" netlify>
+                        <div class="form-group-h">
+                            <label for="footer-email" class="visually-hidden">Email address</label>
+                            <input type="email" id="footer-email" name="email" class="footer-newsletter-input" placeholder="Your email address" required>
+                            <button type="submit" class="btn-primary footer-newsletter-button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="footer-col footer-links-col">
+                     <h3 class="footer-heading">Explore</h3>
+                     <nav class="footer-nav">
+                         <a href="index.html">Home</a>
+                         <a href="podcast.html">Podcast</a>
+                         <a href="books.html">Books</a>
+                         <a href="philosophy.html">Philosophy</a>
+                     </nav>
+                </div>
+
+                 <div class="footer-col footer-contact-col">
+                     <h3 class="footer-heading">Contact Us</h3>
+                     <a href="mailto:prismoftorah@gmail.com" class="footer-contact-link">
+                        <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 4.5h21A1.5 1.5 0 0 1 24 6v12a1.5 1.5 0 0 1-1.5 1.5h-21A1.5 1.5 0 0 1 0 18V6A1.5 1.5 0 0 1 1.5 4.5zM21 8.355l-8.42 5.613a1.5 1.5 0 0 1-1.16.002L3 8.355V18h18V8.355zM3.52 6l8.48 5.653a.5.5 0 0 0 .387.001L20.48 6H3.52z"></path></svg>
+                        <span>prismoftorah@gmail.com</span>
+                     </a>
+                </div>
             </div>
 
-            <!-- Stay Connected Section -->
-            <div class="footer-newsletter">
-                <h3>Stay Connected</h3>
-                <form class="footer-newsletter-form" action="mailto:eli@elipodcastproductions.com" method="post" enctype="text/plain">
-                    <input type="hidden" name="subject" value="Newsletter Signup">
-                    <input type="email" name="body" class="footer-newsletter-input" placeholder="Enter email" required aria-label="Email address for newsletter">
-                    <button type="submit" class="footer-newsletter-button">Subscribe</button>
-                </form>
-            </div>
-
-            <!-- Legal Section -->
-            <div class="footer-legal">
-                <a href="privacy.html">Privacy Policy</a>
-                <span class="footer-legal-separator">|</span>
-                <a href="terms.html">Terms &amp; Conditions</a>
-            </div>
-
-            <!-- Copyright Section -->
-            <div class="footer-copyright">
-                © 2025 Prism of Torah • Design &amp; podcast production by <a href="mailto:eli@elipodcastproductions.com">Eli Podcast Productions</a>
+            <div class="footer-bottom">
+                <div class="footer-legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+                <div class="footer-copyright-notice">
+                    <p>© 2025 Prism of Torah | Design & Production © <a href="mailto:eli@elipodcastproductions.com">Eli Podcast Productions</a></p>
+                </div>
             </div>
         </div>
     </footer>
+    <!-- END SITE FOOTER -->
 
     <script src="js/main.js"></script>
     <script src="js/podcast.js"></script>
