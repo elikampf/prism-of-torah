@@ -16,10 +16,6 @@
   --font-weight-bold: 700;
   --font-weight-extrabold: 800;
 
-  /* Additional font weight variables for podcast page */
-  --font-medium: 500;
-  --font-semibold: 600;
-
   /* Font Sizes */
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -44,12 +40,6 @@
   --gray-700: #374151;
   --gray-800: #1f2937;
   --gray-900: #111827;
-  
-  /* Additional color variables for podcast page */
-  --primary-white: #ffffff;
-  --primary-dark: #000000;
-  --accent-blue: #3b82f6;
-  --accent-amber: #f59e0b;
   
   --blue-500: #3b82f6;
   --blue-600: #2563eb;

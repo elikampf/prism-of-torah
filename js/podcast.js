@@ -1455,29 +1455,23 @@ window.podcastData = {
 
 // Initialize podcast page functionality
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('Podcast.js loaded');
-  
-  // Only run on podcast page
-  if (!window.location.pathname.includes('podcast.html')) {
+  // Check if we're on the podcast page
+  const isOnPodcastPage = window.location.pathname.includes('podcast') || 
+                         document.querySelector('.episode-archive') !== null;
+  if (!isOnPodcastPage) {
     console.log('Not on podcast page, exiting');
     return;
   }
+  console.log('On podcast page, initializing...');
 
   const accordion = document.getElementById('episode-accordion');
-  console.log('Accordion element found:', accordion);
 
   // Populate archive from data
   function populateArchive() {
-    console.log('Populating archive...');
     const sefarim = Object.keys(window.podcastData);
-    console.log('Sefarim found:', sefarim);
-    
     sefarim.forEach(sefer => {
       const seferSection = accordion.querySelector(`.sefer-section[data-sefer="${sefer}"]`);
-      if (!seferSection) {
-        console.log(`Sefer section not found for: ${sefer}`);
-        return;
-      }
+      if (!seferSection) return;
       
       const seferContent = seferSection.querySelector('.sefer-content');
       // Remove loading placeholder
@@ -1516,24 +1510,17 @@ document.addEventListener('DOMContentLoaded', function() {
         seferContent.appendChild(parshaSection);
       });
     });
-    console.log('Archive populated');
   }
 
   // Handle accordion clicks
   function handleAccordionClicks() {
-    console.log('Setting up accordion click handlers');
     accordion.addEventListener('click', function(e) {
-      console.log('Accordion clicked:', e.target);
-      
       // Sefer accordion
       const seferBtn = e.target.closest('.sefer-header');
       if (seferBtn) {
-        console.log('Sefer button clicked:', seferBtn);
         const contentId = seferBtn.getAttribute('data-target');
         const content = document.getElementById(contentId);
         const expanded = seferBtn.getAttribute('aria-expanded') === 'true';
-        
-        console.log('Content ID:', contentId, 'Content found:', content, 'Currently expanded:', expanded);
         
         // Collapse all sefer sections
         accordion.querySelectorAll('.sefer-header').forEach(btn => {
@@ -1548,7 +1535,6 @@ document.addEventListener('DOMContentLoaded', function() {
           content.style.display = 'block';
           const icon = seferBtn.querySelector('.expand-icon');
           if (icon) icon.textContent = '-';
-          console.log('Sefer section expanded');
         }
         return;
       }
@@ -1556,12 +1542,9 @@ document.addEventListener('DOMContentLoaded', function() {
       // Parsha accordion
       const parshaBtn = e.target.closest('.parsha-header');
       if (parshaBtn) {
-        console.log('Parsha button clicked:', parshaBtn);
         const contentId = parshaBtn.getAttribute('data-target');
         const content = document.getElementById(contentId);
         const expanded = parshaBtn.getAttribute('aria-expanded') === 'true';
-        
-        console.log('Parsha Content ID:', contentId, 'Content found:', content, 'Currently expanded:', expanded);
         
         // Collapse sibling parsha sections
         const parshaSections = parshaBtn.closest('.sefer-content').querySelectorAll('.parsha-header');
@@ -1578,17 +1561,13 @@ document.addEventListener('DOMContentLoaded', function() {
           content.style.display = 'block';
           const icon = parshaBtn.querySelector('.expand-icon');
           if (icon) icon.textContent = '-';
-          console.log('Parsha section expanded');
         }
         return;
       }
     });
-    console.log('Accordion click handlers set up');
   }
 
   // Initialize everything
-  console.log('Initializing podcast functionality...');
   populateArchive();
   handleAccordionClicks();
-  console.log('Podcast functionality initialized');
 });

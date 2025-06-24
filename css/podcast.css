@@ -524,20 +524,10 @@
     align-items: center;
     gap: var(--space-4);
     transition: all var(--transition-base);
-    position: relative;
 }
 
 .sefer-header:hover {
     background: var(--gray-50);
-}
-
-.sefer-header[aria-expanded="true"] {
-    background: var(--blue-50);
-    border-bottom: 2px solid var(--blue-200);
-}
-
-.sefer-header[aria-expanded="true"] .sefer-title {
-    color: var(--blue-700);
 }
 
 .sefer-icon {
@@ -560,23 +550,16 @@
     font-size: var(--text-lg);
     transition: transform var(--transition-base);
     color: var(--gray-500);
-    font-weight: bold;
 }
 
 .sefer-header[aria-expanded="true"] .expand-icon {
     transform: rotate(180deg);
-    color: var(--blue-600);
 }
 
 .sefer-content {
     background: var(--gray-50);
     padding: var(--space-6);
     display: none;
-    border-top: 1px solid var(--gray-200);
-}
-
-.sefer-content[style*="display: block"] {
-    display: block !important;
 }
 
 .parsha-section {
@@ -600,25 +583,10 @@
     transition: all var(--transition-base);
     border-radius: var(--radius);
     margin-bottom: var(--space-2);
-    position: relative;
 }
 
 .parsha-header:hover {
     background: var(--gray-50);
-}
-
-.parsha-header[aria-expanded="true"] {
-    background: var(--blue-50);
-    border: 1px solid var(--blue-200);
-}
-
-.parsha-header[aria-expanded="true"] .parsha-title {
-    color: var(--blue-700);
-}
-
-.parsha-header[aria-expanded="true"] .expand-icon {
-    transform: rotate(180deg);
-    color: var(--blue-600);
 }
 
 .parsha-icon {
@@ -640,11 +608,6 @@
 .parsha-episodes {
     padding-left: var(--space-6);
     display: none;
-    margin-top: var(--space-2);
-}
-
-.parsha-episodes[style*="display: block"] {
-    display: block !important;
 }
 
 .episode-item {
