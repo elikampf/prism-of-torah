@@ -36,8 +36,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/books-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
-<body>
+<body class="books-page">
     <header class="header">
         <div class="header-container">
             <!-- Logo Section -->
@@ -68,9 +71,12 @@
         <!-- HERO SECTION -->
         <section class="hero-section" aria-label="Books Hero">
             <div class="hero-container">
+                <div class="hero-col-image">
                 <div class="hero-image">
                     <img src="images/books/prism-torah-cover-2.webp" alt="Prism of Torah Book Cover" width="462" height="462" loading="lazy">
+                    </div>
                 </div>
+                <div class="hero-col-text">
                 <div class="hero-content">
                     <h1 class="hero-headline">Transform Your Torah Learning Into Life-Changing Wisdom</h1>
                     <p class="hero-subtitle">Discover practical guidance from Chazal, Rishonim, and Acharonim for modern challenges</p>
@@ -78,14 +84,15 @@
                         <div class="hero-buttons">
                             <a href="#current-book" class="btn-primary">
                                 <span class="btn-icon">📖</span>
-                                <span class="btn-text">Get Prism of Torah - $36</span>
+                                <span class="btn-text">Prism of Torah</span>
                             </a>
                             <a href="#upcoming" class="btn-secondary">
                                 <span class="btn-icon">⏰</span>
-                                <span class="btn-text">Reserve Torah in a Flash</span>
+                                <span class="btn-text">Dvar Torah in a Flash</span>
                             </a>
                         </div>
                         <p class="hero-credibility">464 pages • Hardcover • Available Now</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -97,65 +104,77 @@
         <!-- PROBLEM SECTION -->
         <section class="problem-section redesigned-problem-section">
             <div class="problem-bg-accent" aria-hidden="true"></div>
-            <div class="container problem-container">
-                <div class="prism-accent-bar"></div>
-                <h2 class="problem-headline redesigned-problem-headline">
+            <div class="container problem-container" style="text-align:center;">
+                <h2 class="section-title redesigned-problem-headline" style="margin-bottom: var(--space-8);">
                     Every week we read the parsha,<br>
-                    <span class="problem-headline-accent">but does it actually change how we live?</span>
+                    <span class="problem-headline-accent" style="display:block; color:var(--accent-blue); font-size:var(--text-xl); font-weight:var(--font-semibold); margin-top:var(--space-2);">but does it actually change how we live?</span>
                 </h2>
-                <ul class="problem-list redesigned-problem-list">
-                    <li><span class="problem-icon">💭</span> We hear inspiring ideas, but struggle to apply them to our daily decisions.</li>
-                    <li><span class="problem-icon">🌀</span> Parsha learning often stays theoretical, not practical.</li>
-                    <li><span class="problem-icon">⏳</span> Stories and lessons are quickly forgotten by the next week.</li>
+                <ul class="problem-list redesigned-problem-list" style="margin-top: var(--space-8);">
+                    <li><span class="problem-icon card-icon" style="color:var(--accent-blue); font-size:2rem; margin-right:var(--space-3);">🧠</span> We hear inspiring ideas, but struggle to apply them to our daily decisions.</li>
+                    <li><span class="problem-icon card-icon" style="color:var(--accent-blue); font-size:2rem; margin-right:var(--space-3);">🌀</span> Parsha learning often stays theoretical, not practical.</li>
+                    <li><span class="problem-icon card-icon" style="color:var(--accent-blue); font-size:2rem; margin-right:var(--space-3);">⏳</span> Stories and lessons are quickly forgotten by the next week.</li>
                 </ul>
             </div>
         </section>
 
         <!-- SOLUTION SECTION -->
-        <section class="solution-section enhanced-method-section">
+        <section class="method-section enhanced-method-section" aria-label="Three-Part Method">
             <div class="container">
-                <h2 class="solution-headline">Our Three-Part Method</h2>
-                <div class="solution-steps enhanced-method-steps">
-                    <div class="solution-step enhanced-method-card">
-                        <div class="method-flow-line left" aria-hidden="true"></div>
-                        <div class="step-number-circle" style="background: linear-gradient(135deg, #42a5f5 60%, #ab47bc 100%);">1</div>
+                <h2 class="section-title">Our Three-Part Method</h2>
+                <p class="section-subtitle">Unlike other Torah resources that give you either depth OR practicality, you get both plus memorable stories</p>
+                <div class="method-grid enhanced-method-steps">
+                    <article class="method-card enhanced-method-card" aria-label="The Teaching">
+                        <div class="step-number-circle step-color-blue">1</div>
                         <div class="step-icon method-icon-book">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="4" y="7" width="28" height="22" rx="4" fill="#42a5f5"/>
-                                <rect x="8" y="11" width="20" height="14" rx="2" fill="#fff"/>
-                                <rect x="12" y="15" width="12" height="2" rx="1" fill="#42a5f5"/>
-                                <rect x="12" y="19" width="8" height="2" rx="1" fill="#ab47bc"/>
+                                <rect x="4" y="7" width="28" height="22" rx="4" class="svg-fill-accent-blue"/>
+                                <rect x="8" y="11" width="20" height="14" rx="2" class="svg-fill-white"/>
+                                <rect x="12" y="15" width="12" height="2" rx="1" class="svg-fill-accent-blue"/>
+                                <rect x="12" y="19" width="8" height="2" rx="1" class="svg-fill-prism-purple"/>
                             </svg>
                         </div>
-                        <h3 class="step-title">Central idea from traditional sources</h3>
-                        <p class="step-desc">We start with a core Torah concept, rooted in Chazal, Rishonim, and Acharonim.</p>
-                    </div>
-                    <div class="solution-step enhanced-method-card">
-                        <div class="method-flow-line center" aria-hidden="true"></div>
-                        <div class="step-number-circle" style="background: linear-gradient(135deg, #66bb6a 60%, #42a5f5 100%);">2</div>
+                        <h3 class="step-title">The Teaching</h3>
+                        <p class="method-tagline step-desc">Deep insights from Torah sources, explained clearly</p>
+                        <ul>
+                            <li>Classical wisdom made accessible</li>
+                            <li>Contemporary language for timeless concepts</li>
+                            <li>Scholarly depth without overwhelming complexity</li>
+                        </ul>
+                    </article>
+                    <article class="method-card enhanced-method-card" aria-label="The Takeaway">
+                        <div class="step-number-circle step-color-green">2</div>
                         <div class="step-icon method-icon-lightbulb">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <ellipse cx="18" cy="14" rx="10" ry="10" fill="#66bb6a"/>
-                                <rect x="15" y="24" width="6" height="6" rx="2" fill="#fff"/>
-                                <rect x="16.5" y="22" width="3" height="3" rx="1.5" fill="#66bb6a"/>
+                                <ellipse cx="18" cy="14" rx="10" ry="10" class="svg-fill-prism-green"/>
+                                <rect x="15" y="24" width="6" height="6" rx="2" class="svg-fill-white"/>
+                                <rect x="16.5" y="22" width="3" height="3" rx="1.5" class="svg-fill-prism-green"/>
                             </svg>
                         </div>
-                        <h3 class="step-title">Practical ethical lessons</h3>
-                        <p class="step-desc">We extract actionable guidance for daily life, making Torah relevant and real.</p>
-                    </div>
-                    <div class="solution-step enhanced-method-card">
-                        <div class="method-flow-line right" aria-hidden="true"></div>
-                        <div class="step-number-circle" style="background: linear-gradient(135deg, #ffa726 60%, #ff6b6b 100%);">3</div>
+                        <h3 class="step-title">The Takeaway</h3>
+                        <p class="method-tagline step-desc">Practical wisdom you can apply immediately</p>
+                        <ul>
+                            <li>Specific actions for daily life</li>
+                            <li>Move from thinking to living your values</li>
+                            <li>Small steps that create lasting change</li>
+                        </ul>
+                    </article>
+                    <article class="method-card enhanced-method-card" aria-label="The Story">
+                        <div class="step-number-circle step-color-orange">3</div>
                         <div class="step-icon method-icon-stories">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <ellipse cx="18" cy="18" rx="14" ry="10" fill="#ffa726"/>
-                                <ellipse cx="18" cy="18" rx="8" ry="6" fill="#fff"/>
-                                <ellipse cx="18" cy="18" rx="4" ry="3" fill="#ff6b6b"/>
+                                <ellipse cx="18" cy="18" rx="14" ry="10" class="svg-fill-prism-orange"/>
+                                <ellipse cx="18" cy="18" rx="8" ry="6" class="svg-fill-white"/>
+                                <ellipse cx="18" cy="18" rx="4" ry="3" class="svg-fill-prism-red"/>
                             </svg>
                         </div>
-                        <h3 class="step-title">Engaging stories that illustrate</h3>
-                        <p class="step-desc">Memorable stories and examples bring the lesson to life and make it stick.</p>
-                    </div>
+                        <h3 class="step-title">The Story</h3>
+                        <p class="method-tagline step-desc">Memorable examples that bring it all home</p>
+                        <ul>
+                            <li>Tales from great Jewish leaders</li>
+                            <li>Modern applications of Torah wisdom</li>
+                            <li>Stories that stick with you all week</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
         </section>
@@ -163,25 +182,94 @@
         <!-- CURRENT BOOK SHOWCASE SECTION -->
         <section id="current-book" class="current-book-showcase single-book-showcase polished-book-section">
             <div class="book-bg-accent" aria-hidden="true"></div>
-            <div class="container book-flex-row polished-book-flex">
-                <div class="book-image-col">
-                    <img src="images/books/prism-torah-cover.webp" alt="Prism of Torah Book Cover" class="book-cover polished-book-image" width="400" height="520" loading="lazy">
-                </div>
-                <div class="book-content-col polished-book-content">
-                    <h2 class="book-main-headline polished-book-headline">The Complete Weekly Parsha Experience</h2>
-                    <ul class="book-main-features polished-book-features">
-                        <li><span class="feature-icon">✔️</span> Deep classical sources made accessible</li>
-                        <li><span class="feature-icon">✔️</span> Real-life applications for modern challenges</li>
-                        <li><span class="feature-icon">✔️</span> Stories that stick with you</li>
-                        <li><span class="feature-icon">✔️</span> Perfect for Shabbos table discussions and personal growth</li>
-                    </ul>
-                    <div class="book-main-cta-row polished-book-cta-row">
-                        <span class="book-price polished-book-price">$36</span>
-                        <a href="#" class="btn-primary book-main-cta polished-book-cta">Order Now</a>
+            <div class="container">
+                <div class="books-two-column-layout">
+                    <!-- Prism of Torah - 2/3 width -->
+                    <div class="prism-torah-column">
+                        <div class="book-flex-row polished-book-flex">
+                            <div class="book-image-col">
+                                <img src="images/books/prism-torah-cover.webp" alt="Prism of Torah Book Cover" class="book-cover polished-book-image" width="400" height="520" loading="lazy">
+                            </div>
+                            <div class="book-content-col polished-book-content">
+                                <h2 class="book-main-headline polished-book-headline">The Complete Weekly Parsha Experience</h2>
+                                <ul class="book-main-features polished-book-features">
+                                    <li><span class="feature-icon">✔️</span> Deep classical sources made accessible</li>
+                                    <li><span class="feature-icon">✔️</span> Real-life applications for modern challenges</li>
+                                    <li><span class="feature-icon">✔️</span> Stories that stick with you</li>
+                                    <li><span class="feature-icon">✔️</span> Perfect for Shabbos table discussions and personal growth</li>
+                                </ul>
+                                <div class="book-main-cta-row">
+                                    <button class="btn-primary book-main-cta polished-book-cta" onclick="showOrderOptions()">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Torah in a Flash - 1/3 width -->
+                    <div class="torah-flash-column">
+                        <div class="flash-book-card">
+                            <div class="flash-book-image">
+                                <img src="images/books/upcoming-book-mockup.webp" alt="Torah in a Flash Book Mockup" width="200" height="280" loading="lazy">
+                                <div class="flash-badge">
+                                    <span class="badge-text">Spring 2025</span>
+                                </div>
+                            </div>
+                            <div class="flash-book-content">
+                                <h3 class="flash-book-title">Torah in a Flash</h3>
+                                <p class="flash-book-subtitle">Coming Soon</p>
+                                
+                                <div class="flash-features">
+                                    <ul class="flash-features-list">
+                                        <li><span class="feature-icon">⚡</span> Quick-read format</li>
+                                        <li><span class="feature-icon">📱</span> Perfect for daily inspiration</li>
+                                        <li><span class="feature-icon">🎯</span> Focused insights</li>
+                                    </ul>
+                                </div>
+                                
+                                <button class="btn-secondary flash-cta" onclick="requestTorahFlash()">
+                                    <span class="cta-text">I Want This Book</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Order Options Modal -->
+        <div id="orderModal" class="modal-overlay" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Choose Your Order Option</h3>
+                    <button class="modal-close" onclick="closeOrderModal()">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="order-options">
+                        <button class="order-option" onclick="orderAuthorCopy()">
+                            <div class="option-icon">📚</div>
+                            <div class="option-content">
+                                <h4>Author Copies</h4>
+                                <p>I live in Israel and want the book</p>
+                            </div>
+                        </button>
+                        <button class="order-option" onclick="orderUnitedStates()">
+                            <div class="option-icon">🇺🇸</div>
+                            <div class="option-content">
+                                <h4>United States</h4>
+                                <p>Order from Amazon US</p>
+                            </div>
+                        </button>
+                        <button class="order-option" onclick="orderIsrael()">
+                            <div class="option-icon">🇮🇱</div>
+                            <div class="option-content">
+                                <h4>Israel</h4>
+                                <p>Order from Hamadaf</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- TESTIMONIALS SECTION -->
         <section class="testimonials-section redesigned-testimonials">
@@ -208,57 +296,6 @@
                         <footer class="testimonial-footer redesigned-footer">
                             <span class="rabbi-name">Rabbi Avishai David</span>
                         </footer>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- COMING SOON SECTION -->
-        <section class="coming-soon-section exciting-preview-section">
-            <div class="preview-bg-accent" aria-hidden="true"></div>
-            <div class="container coming-soon-flex-row exciting-preview-flex">
-                <div class="coming-soon-image-col preview-image-col">
-                    <div class="book-preview-wrapper">
-                        <img src="images/books/upcoming-book-mockup.webp" alt="Torah in a Flash Book Mockup" class="coming-soon-book-cover preview-book-image" width="300" height="420" loading="lazy">
-                        <div class="coming-soon-badge preview-badge">
-                            <span class="badge-text">Spring 2025</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="coming-soon-content-col preview-content-col">
-                    <div class="preview-header">
-                        <h2 class="coming-soon-headline exciting-preview-headline">
-                            <span class="headline-accent">Coming Soon:</span><br>
-                            Torah in a Flash
-                        </h2>
-                        <p class="coming-soon-tagline preview-tagline">Lightning-fast Torah insights for busy lives</p>
-                    </div>
-                    
-                    <div class="preview-features">
-                        <h3 class="features-title">What to Expect</h3>
-                        <ul class="coming-soon-features preview-features-list">
-                            <li><span class="feature-icon">⚡</span> Quick-read format for on-the-go learning</li>
-                            <li><span class="feature-icon">📱</span> Perfect for daily inspiration and busy schedules</li>
-                            <li><span class="feature-icon">🎯</span> Focused insights that stick with you</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="exclusive-offer">
-                        <h3 class="offer-title">Get Early Access + 20% Off</h3>
-                        <p class="offer-description">Be among the first to experience this revolutionary approach to Torah learning</p>
-                        
-                        <form class="coming-soon-form exciting-preview-form" name="early-access" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-                            <input type="hidden" name="form-name" value="early-access">
-                            <input type="hidden" name="bot-field">
-                            <div class="coming-soon-form-row preview-form-row">
-                                <input type="email" name="email" placeholder="Enter your email address" required class="coming-soon-input preview-input">
-                                <button type="submit" class="btn-primary coming-soon-cta preview-cta">
-                                    <span class="cta-text">Get Early Access</span>
-                                    <span class="cta-badge">20% Off</span>
-                                </button>
-                            </div>
-                            <p class="form-disclaimer">Join the waitlist and be notified when pre-orders open</p>
-                        </form>
                     </div>
                 </div>
             </div>

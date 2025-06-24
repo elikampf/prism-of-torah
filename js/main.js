@@ -487,4 +487,42 @@ function animateCounters() {
 // Initialize animated counters when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     animateCounters();
+});
+
+// ===== BOOKS PAGE ORDER MODAL & CTA LOGIC =====
+window.showOrderOptions = function() {
+  const modal = document.getElementById('orderModal');
+  if (modal) modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+window.closeOrderModal = function() {
+  const modal = document.getElementById('orderModal');
+  if (modal) modal.style.display = 'none';
+  document.body.style.overflow = '';
+}
+window.orderAuthorCopy = function() {
+  window.closeOrderModal();
+  window.location.href = 'mailto:prismoftorah@gmail.com?subject=Prism%20of%20Torah%20Book%20Order&body=I%20live%20in%20Israel%20and%20want%20the%20book.';
+}
+window.orderUnitedStates = function() {
+  window.closeOrderModal();
+  window.open('https://www.amazon.com/Prism-Torah-Engaging-practical-insights/dp/1962522156', '_blank');
+}
+window.orderIsrael = function() {
+  window.closeOrderModal();
+  window.open('https://www.hamadaf-y.co.il/%D7%97%D7%A0%D7%95%D7%AA/english-books/torah-prophets-bible/prism-of-torah-rabbi-asaf-aharon-prisman/', '_blank');
+}
+window.requestTorahFlash = function() {
+  window.location.href = 'mailto:prismoftorah@gmail.com?subject=I%20want%20Prism%20of%20Torah%20in%20a%20Flash&body=Please%20let%20me%20know%20when%20Torah%20in%20a%20Flash%20is%20available.';
+}
+// Close modal on ESC
+window.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') window.closeOrderModal();
+});
+// Close modal on click outside
+window.addEventListener('click', function(e) {
+  const modal = document.getElementById('orderModal');
+  if (modal && modal.style.display === 'flex' && e.target === modal) {
+    window.closeOrderModal();
+  }
 }); 

@@ -131,3 +131,22 @@
     font-size: var(--text-xl);
     margin-bottom: var(--space-8);
 } 
+
+/* === Prism Step Number Circle Colors === */
+.step-number-circle.step-color-blue {
+  background: linear-gradient(135deg, var(--prism-blue) 60%, var(--prism-purple) 100%);
+}
+.step-number-circle.step-color-green {
+  background: linear-gradient(135deg, var(--prism-green) 60%, var(--prism-blue) 100%);
+}
+.step-number-circle.step-color-orange {
+  background: linear-gradient(135deg, var(--prism-orange) 60%, var(--prism-red) 100%);
+}
+
+/* === SVG Fill Utility Classes === */
+.svg-fill-accent-blue { fill: var(--accent-blue); }
+.svg-fill-prism-purple { fill: var(--prism-purple); }
+.svg-fill-prism-green { fill: var(--prism-green); }
+.svg-fill-prism-orange { fill: var(--prism-orange); }
+.svg-fill-prism-red { fill: var(--prism-red); }
+.svg-fill-white { fill: #fff; } 

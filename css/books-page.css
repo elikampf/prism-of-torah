@@ -1,0 +1,147 @@
+/* ================================================================
+   BOOKS PAGE SPECIFIC STYLES
+   ================================================================ */
+
+/* === BOOKS PAGE 2-COLUMN LAYOUT === */
+.books-page .books-two-column-layout {
+  display: flex !important;
+  gap: var(--space-12);
+  align-items: stretch !important;
+  margin-bottom: var(--space-16);
+}
+
+.books-page .prism-torah-column, 
+.books-page .torah-flash-column {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.books-page .book-flex-row, 
+.books-page .flash-book-card {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: var(--white);
+  border-radius: var(--radius-2xl);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--gray-100);
+  padding: var(--space-8);
+  min-height: 540px;
+  height: 100%;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.books-page .book-image-col, 
+.books-page .flash-book-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: var(--space-4);
+  position: relative;
+}
+
+.books-page .book-cover, 
+.books-page .flash-book-image img {
+  width: 180px !important;
+  height: 260px !important;
+  object-fit: contain !important;
+  border-radius: var(--radius-xl) !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12) !important;
+  border: 1px solid var(--gray-200) !important;
+  padding: var(--space-2) !important;
+  background: var(--white) !important;
+  display: block !important;
+}
+
+.books-page .book-main-headline, 
+.books-page .flash-book-title {
+  text-align: center;
+}
+
+.books-page .book-main-features, 
+.books-page .flash-features-list {
+  align-items: center;
+}
+
+.books-page .book-main-features li, 
+.books-page .flash-features-list li {
+  justify-content: center;
+}
+
+.books-page .book-main-cta-row, 
+.books-page .flash-cta {
+  justify-content: center;
+}
+
+/* === FLASH BOOK STYLING ENHANCEMENTS === */
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3);
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 12px 30px rgba(245, 158, 11, 0.5);
+    transform: scale(1.05);
+  }
+}
+
+.books-page .flash-book-subtitle {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--white);
+  margin-bottom: var(--space-6);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: linear-gradient(135deg, var(--amber-500), var(--purple-500));
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3);
+  border: 2px solid var(--white);
+  animation: pulse-glow 2s ease-in-out infinite alternate;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.books-page .flash-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: linear-gradient(135deg, var(--amber-500), var(--purple-500));
+  color: var(--white);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-lg);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+  border: 2px solid var(--white);
+}
+
+/* Hide the price from the main book */
+.books-page .book-price.polished-book-price {
+  display: none;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 900px) {
+  .books-page .books-two-column-layout {
+    flex-direction: column !important;
+    gap: var(--space-8) !important;
+  }
+  
+  .books-page .book-flex-row, 
+  .books-page .flash-book-card {
+    min-height: auto !important;
+    max-width: 100%;
+    padding: 2rem 1rem;
+    min-height: 400px;
+  }
+} 
