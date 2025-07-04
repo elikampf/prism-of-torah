@@ -27,8 +27,7 @@ window.podcastData = {
       {
         title: "Your Real Competition",
         link: "https://www.podbean.com/ew/dir-u6xiu-1c972fe8",
-        description: "Understanding what really matters in life"
-      },
+           },
       {
         title: "Our Relationship With Objects",
         link: "https://www.podbean.com/ew/dir-xv7cr-1c972fea"
@@ -58,7 +57,6 @@ window.podcastData = {
       {
         title: "Growing Through Life's Challenges",
         link: "https://www.podbean.com/ew/dir-ni2kz-1c972fe6",
-        description: "Foundation for spiritual growth"
       },
       {
         title: "Be the Best Yid",
@@ -85,7 +83,6 @@ window.podcastData = {
       {
         title: "Seize the Moment",
         link: "https://www.podbean.com/ew/dir-v5nru-1c972fd1",
-        description: "Practical wisdom for daily decisions"
       },
       {
         title: "There Is Nothing Like Mother's Intuition",

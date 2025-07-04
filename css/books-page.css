@@ -2,6 +2,32 @@
    BOOKS PAGE SPECIFIC STYLES
    ================================================================ */
 
+/* === BOOKS PAGE HERO SECTION === */
+.books-page .hero-section .hero-image {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.books-page .hero-section .hero-image img {
+  position: relative;
+  z-index: 2;
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.5));
+  /* Fade effect for duo books image */
+  mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 80%, rgba(0,0,0,0.9) 90%, rgba(0,0,0,0.4) 95%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 80%, rgba(0,0,0,0.9) 90%, rgba(0,0,0,0.4) 95%, rgba(0,0,0,0) 100%);
+}
+
+@media (max-width: 768px) {
+  .books-page .hero-section .hero-image img {
+    max-width: 350px;
+  }
+}
+
 /* === BOOKS PAGE 2-COLUMN LAYOUT === */
 .books-page .books-two-column-layout {
   display: flex !important;
